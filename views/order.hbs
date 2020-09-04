@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+      <u><h1 style="text-align: center;"> Welcome to the Store One </h1></u>
+    <div class="container">
+      <fieldset>
+        <h2> Place an order </h2>
+        <form action="/order" method="post">
+        <label > Product: </label>
+          <input name="matter" type="text" class="ghost-input" placeholder="Enter what is to be delivered" required> <br /><br /> 
+           <label > Address1: </label>
+          <input name="address1" type="text" class="ghost-input" placeholder="Place 1 to visit" required> <br /> <br />
+           <label > Person1: </label>
+           <input name="person1" type="text" class="ghost-input" placeholder="Contact person at place1" required> <br /><br />
+            <label > Address2: </label>
+            <input name="address2" type="text" class="ghost-input" placeholder="Place 2 to visit" required> <br /><br />
+             <label > Person2: </label>
+             <input name="person2" type="text" class="ghost-input" placeholder="Contact person at place2" required> <br /><br />
+          <input type="submit" class="ghost-button" value="Place Order">
+          
+       </form>
+        </fieldset>
+       </div>
+       <br /> <br />
+       <div class="container">
+           <fieldset>
+       <h2> Cancel your order</h2>
+        <form action="/order/cancel" method="post">
+         <label > Order_id: </label>
+          <input name="order_id" type="text" class="ghost-input" placeholder="Enter the order_id to cancel" required> <br /><br />
+          <input type="submit" class="ghost-button" value="Cancel Order">
+          <script> console.log("yolo"); </script>
+        </form>
+     </fieldset>
+    </div>
+  </body>
+</html>
